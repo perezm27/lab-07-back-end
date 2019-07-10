@@ -67,9 +67,9 @@ function getWeatherRoute(locationName) {
   const weatherData = require('./data/darksky.json');
   let retArr = [];
   let time;
-  for (let el of weatherData.daily.data) {
-    time = new Date(el.time*1000).toDateString();
-    retArr.push(new Day (el.summary, time));
+  for (let day of weatherData.daily.data) {
+    time = new Date(day.time*1000).toDateString();
+    retArr.push(new Day (day.summary, time));
   }
   return retArr;
 }
