@@ -6,7 +6,7 @@ const express = require('express');
 const cors = require('cors');
 
 // Globals
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3009;
 
 // Make the server
 const app = express();
