@@ -29,6 +29,8 @@ Technology: VS code, node.js
 
 ## Timeline
 
+## Lab6
+
 Number and name of feature: 1. Setup the repository
 
 Estimate of time needed to complete: 30 min
