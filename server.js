@@ -65,13 +65,13 @@ function Day(forecast, time) {
 
 function getWeatherRoute(locationName) {
   const weatherData = require('./data/darksky.json');
-  let retArr = [];
+  let daysArr = [];
   let time;
   for (let day of weatherData.daily.data) {
     time = new Date(day.time*1000).toDateString();
-    retArr.push(new Day (day.summary, time));
+    daysArr.push(new Day (day.summary, time));
   }
-  return retArr;
+  return daysArr;
 }
 
 // Start the server.
